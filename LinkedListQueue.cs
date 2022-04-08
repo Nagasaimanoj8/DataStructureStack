@@ -44,5 +44,19 @@ namespace Datastructure
                 }
             }
         }
+        public void Dequeue()
+        {
+            //if queue  is empty ,return Null.
+            if(this.head == null)
+            {
+                Console.WriteLine("the Queue is empty");
+                return ;
+            }
+            //store previous head and move head pointer one step ahead to delete
+            int deleteNode=this.head.data;
+            this.head=this.head.next;
+            Console.WriteLine("\n{0} is deleted from queue",deleteNode);
+        }
+       
     }
 }
