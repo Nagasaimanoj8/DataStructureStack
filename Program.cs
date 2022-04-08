@@ -30,7 +30,11 @@ namespace Datastructure
                     stack.Push(30);
                     stack.Push(56);
                     stack.Display();
-                break;
+                    // stack.Peek();
+                    // stack.Pop();
+                    Console.WriteLine( "is stack empty? {0}", stack.isEmpty()); 
+                    stack.Display();
+                    break;
                 case 5:
                     LinkedlistStack customStack = new LinkedlistStack();
                     customStack.PushByLinkedList(70);
@@ -51,11 +55,11 @@ namespace Datastructure
             //stack.Push(30);
             //stack.Pop();
 
-            CustomLinkedList linkedList = new CustomLinkedList();
-            linkedList.AddAtLast(56);
-            linkedList.AddAtLast(30);
-            linkedList.AddAtLast(70);
-            linkedList.Display();
+           // CustomLinkedList linkedList = new CustomLinkedList();
+           // linkedList.AddAtLast(56);
+            //linkedList.AddAtLast(30);
+            //linkedList.AddAtLast(70);
+            //linkedList.Display();
             //  linkedList.InsertAtParticularPosition(2, 30);
             // Console.WriteLine("\n{0}is deleted from the Linkedlist",  linkedList.DeleteLastNode());
             // linkedList.Display();

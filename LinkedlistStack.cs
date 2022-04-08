@@ -47,5 +47,40 @@ namespace Datastructure
         {
             list.Display();
         }
+        public void Peek()
+        {
+            //Checking if top element is null
+            //otherwise printing the top element
+            if(this.top == null)
+            {
+                Console.WriteLine("no element present in stack");
+                return;
+            }
+            Console.WriteLine("\n Top most element"+this.top.data);
+        }
+        public void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("no element present to pop");
+                return ;
+            }
+            else
+            {
+                //peek();
+                int deleteNode=this.top.data;
+                this.top = top.next;
+                Console.WriteLine("{0} is deleted from the stack",deleteNode);
+            }
+        }
+        public bool isEmpty()
+        {
+            while (this.top != null)
+            {
+                Peek();
+                Pop();
+            }
+            return true;
+        }
     }
 }
