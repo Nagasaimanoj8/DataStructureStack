@@ -35,6 +35,14 @@ namespace Datastructure
                     Console.WriteLine( "is stack empty? {0}", stack.isEmpty()); 
                     stack.Display();
                     break;
+                case 3:
+                    LinkedListQueue queue=new LinkedListQueue();
+                    queue.Enqueue(56);
+                    queue.Enqueue(30);
+                    queue.Enqueue(70);
+                    queue.Display(); 
+                    break;
+
                 case 5:
                     LinkedlistStack customStack = new LinkedlistStack();
                     customStack.PushByLinkedList(70);
@@ -42,6 +50,7 @@ namespace Datastructure
                     customStack.PushByLinkedList(56);
                     customStack.DisplayByLinkedList();
                     break;
+
                 default:
                     break;
             }
